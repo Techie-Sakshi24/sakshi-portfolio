@@ -17,3 +17,7 @@ It showcases my projects, resume, and will include an interactive chatbot powere
 ## 📱 Responsive Design
 This portfolio is now mobile-friendly.  
 The layout adapts to smaller screens using CSS media queries.
+
+## 🎨 Interactivity
+- Smooth scrolling for navigation links
+- Dark mode toggle button

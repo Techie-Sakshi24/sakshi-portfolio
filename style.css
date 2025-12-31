@@ -101,3 +101,17 @@ footer
         padding: 10px;
     }
 }
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #121212;
+    color: #f5f5f5;
+}
+
+.dark-mode nav {
+    background-color: #222;
+}
+
+.dark-mode footer {
+    background-color: #111;
+}
