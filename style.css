@@ -138,3 +138,19 @@ footer
     box-shadow: 0 8px 12px rgba(0,0,0,0.2);
 }
 
+/* Background Gradient */
+body {
+    background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Custom Cursor */
+body {
+    cursor: url('assets/mycursor.cur'), auto;
+}
+
+/* Optional: Hover effect for links */
+a:hover {
+    cursor: pointer;
+}
