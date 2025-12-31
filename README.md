@@ -14,4 +14,6 @@ It showcases my projects, resume, and will include an interactive chatbot powere
 - Version Control: Git & GitHub
 - Deployment: GitHub Pages (future: cloud hosting for AI backend)
 
-## 📂 Folder Structure
+## 📱 Responsive Design
+This portfolio is now mobile-friendly.  
+The layout adapts to smaller screens using CSS media queries.
