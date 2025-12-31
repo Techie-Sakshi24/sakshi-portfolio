@@ -21,3 +21,8 @@ The layout adapts to smaller screens using CSS media queries.
 ## 🎨 Interactivity
 - Smooth scrolling for navigation links
 - Dark mode toggle button
+
+## 🖼 Projects Section
+- Added project cards with hover effects
+- Showcases Expense Tracker, Food Ordering System, and Portfolio Website
+
