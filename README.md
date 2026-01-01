@@ -30,3 +30,7 @@ The layout adapts to smaller screens using CSS media queries.
 - Added soft gradient background and refined typography
 - Implemented fade-in animations for sections
 - Portfolio now reflects Sakshi’s personality: ambitious, polished, and professional
+
+## 👩 About Me Section
+- Added profile photo and personal introduction
+- Highlights Sakshi’s personality: focused, ambitious, and optimistic
