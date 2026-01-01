@@ -26,3 +26,7 @@ The layout adapts to smaller screens using CSS media queries.
 - Added project cards with hover effects
 - Showcases Expense Tracker, Food Ordering System, and Portfolio Website
 
+## ✨ Elegant Styling
+- Added soft gradient background and refined typography
+- Implemented fade-in animations for sections
+- Portfolio now reflects Sakshi’s personality: ambitious, polished, and professional
