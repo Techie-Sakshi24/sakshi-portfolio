@@ -7,8 +7,8 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  color: #333;
-  background: rgb(255, 245, 235);
+  color: #4a1624;
+  background: rgb(205, 161, 252);
   transition: background 8s ease-in-out;
   overflow-x: hidden;
 }
@@ -220,3 +220,4 @@ section.visible {
     opacity: 1;
   }
 }
+
