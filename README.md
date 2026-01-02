@@ -1,41 +1,55 @@
-# Sakshi Portfolio
+# 🌟 Sakshi Portfolio
 
-This is my **AI-powered portfolio website** built using HTML, CSS, and JavaScript.  
-It showcases my projects, resume, and will include an interactive chatbot powered by AI.
+Elegant, recruiter-ready portfolio showcasing my personality, skills, and projects.  
+Built with **HTML, CSS, and JavaScript** — featuring smooth animations, pastel backgrounds, and a starry canvas effect.
 
-## 🚀 Features
-- Clean homepage with About Me, Projects, and Contact sections
+---
+
+## ✨ Features
+- Soft pastel background with gentle transitions
+- Animated starfield background
+- Smooth scroll navigation
+- Sections reveal elegantly on scroll
+- Personal intro with profile photo and tagline
+- Experience, Contact, and Socials sections
 - Responsive design for desktop and mobile
-- Future AI chatbot integration to answer questions about my skills and projects
-- Hosted on GitHub Pages for easy access
 
-## 🛠 Tech Stack
-- Frontend: HTML, CSS, JavaScript
-- Version Control: Git & GitHub
-- Deployment: GitHub Pages (future: cloud hosting for AI backend)
+---
 
-## 📱 Responsive Design
-This portfolio is now mobile-friendly.  
-The layout adapts to smaller screens using CSS media queries.
+## 👩 About Me
+Hi, I'm **Sakshi Kale**, 20 years old 👋  
+A 3rd year BCA student passionate about elegant design and bold coding solutions.  
+I love building creative web projects that turn ideas into recruiter‑friendly showcases.
 
-## 🎨 Interactivity
-- Smooth scrolling for navigation links
-- Dark mode toggle button
+---
 
-## 🖼 Projects Section
-- Added project cards with hover effects
-- Showcases Expense Tracker, Food Ordering System, and Portfolio Website
+## 🛠️ Technologies Used
+- **HTML5** for structure  
+- **CSS3** for styling and animations  
+- **JavaScript (ES6)** for interactivity and background effects  
+- **Google Fonts** (Poppins + Playfair Display) for elegant typography  
 
-## ✨ Elegant Styling
-- Added soft gradient background and refined typography
-- Implemented fade-in animations for sections
-- Portfolio now reflects Sakshi’s personality: ambitious, polished, and professional
+---
 
-## 👩 About Me Section
-- Added profile photo and personal introduction
-- Highlights Sakshi’s personality: focused, ambitious, and optimistic
+## 📂 Sections
+- **Intro** → Name, age, tagline, and profile photo  
+- **Experience** → Internship, developer roles, and leadership positions  
+- **Contact** → Email, GitHub, LinkedIn  
+- **Socials** → GitHub, LinkedIn, X, Replit, Gmail  
+- **Footer** → Content markers for navigation  
 
-## 🌌 New Features
-- Dynamic background color changes on scroll
-- Animated starfield background using canvas
-- Social buttons for GitHub, LinkedIn, X, Replit, and Gmail
+---
+
+## 🔗 Social Links
+- [GitHub](https://github.com/Techie-Sakshi24)  
+- [LinkedIn](https://linkedin.com/in/sakshi-kale-701580250)  
+- [X (Twitter)](https://x.com/SakshiKale32757)  
+- [Replit](https://replit.com/@sakshiskale2405)  
+- [Gmail](mailto:sakshiskale.2405@gmail.com)  
+
+---
+
+## 🚀 How to Run
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/Techie-Sakshi24/sakshi-portfolio.git
