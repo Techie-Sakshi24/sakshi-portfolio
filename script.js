@@ -88,6 +88,7 @@ window.addEventListener('resize', () => {
 
 // Reveal timeline items on scroll
 const timelineItems = document.querySelectorAll('.timeline-item');
+
 function revealTimeline() {
   timelineItems.forEach(item => {
     const rect = item.getBoundingClientRect();
@@ -96,5 +97,6 @@ function revealTimeline() {
     }
   });
 }
+
 window.addEventListener('scroll', revealTimeline);
 window.addEventListener('load', revealTimeline);

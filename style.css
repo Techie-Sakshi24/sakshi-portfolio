@@ -221,7 +221,7 @@ section.visible {
   }
 }
 
-/* Certifications Timeline */
+/* Certifications Timeline — Infographic Style */
 .certifications {
   padding: 60px 20px;
   max-width: 900px;
@@ -231,13 +231,13 @@ section.visible {
 
 .certifications h3 {
   font-size: 1.4rem;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   color: #2c3e50;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-/* Vertical centered line */
+/* Vertical line */
 .timeline {
   position: relative;
   margin: 0 auto;
@@ -253,17 +253,19 @@ section.visible {
   transform: translateX(-50%);
   width: 2px;
   height: 100%;
-  background: rgba(44, 62, 80, 0.15); /* subtle center line */
+  background: #ccc;
 }
 
-/* Items alternate left/right around the center line */
+/* Timeline items */
 .timeline-item {
   position: relative;
+  width: 100%;
+  margin: 40px 0;
   display: flex;
-  justify-content: flex-start;
-  margin: 30px 0;
+  justify-content: center;
+  align-items: center;
   opacity: 0;
-  transform: translateY(20px);
+  transform: translateY(30px);
   transition: all 0.6s ease;
 }
 
@@ -272,73 +274,101 @@ section.visible {
   transform: translateY(0);
 }
 
-.timeline-item:nth-child(odd) .timeline-content {
-  margin-right: calc(50% + 30px);
-  text-align: right;
-}
-
-.timeline-item:nth-child(even) .timeline-content {
-  margin-left: calc(50% + 30px);
-  text-align: left;
-}
-
-/* Dot at the center line */
+/* Dot */
 .timeline-dot {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  width: 12px;
-  height: 12px;
-  background: #c4a484; /* beige accent */
+  width: 16px;
+  height: 16px;
+  background: #c4a484;
   border: 2px solid #2c3e50;
   border-radius: 50%;
-  top: 10px;
+  z-index: 1;
 }
 
-/* Content card */
+/* Content */
 .timeline-content {
-  background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(2px);
-  border: 1px solid rgba(0,0,0,0.08);
-  border-radius: 10px;
-  padding: 16px 20px;
-  max-width: 350px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  width: 45%;
+  padding: 10px 20px;
+  background: none;
+  border: none;
+  text-align: left;
 }
 
 .timeline-content h4 {
   font-size: 1.05rem;
   color: #2c3e50;
-  margin-bottom: 6px;
   font-weight: 600;
-}
-
-.timeline-meta {
-  font-size: 0.9rem;
-  color: #777;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .timeline-content p {
-  font-size: 0.95rem;
-  color: #555;
-  line-height: 1.55;
+  font-size: 0.9rem;
+  color: #777;
+  margin: 0;
 }
 
-/* Mobile responsive: stack items centered */
+/* Alternate sides */
+.timeline-item:nth-child(odd) .timeline-content {
+  text-align: right;
+  margin-right: auto;
+  padding-right: 40px;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+  text-align: left;
+  margin-left: auto;
+  padding-left: 40px;
+}
+
+.timeline-icon {
+  width: 48px;   
+  height: 48px;  
+  object-fit: contain;
+  vertical-align: middle;
+  margin-right: 12px; /* slightly more spacing */
+}
+
+.timeline-content h4 {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1.1rem; 
+}
+
+/* Medium size for JPMorgan & Deloitte */
+.medium-icon {
+  width: 74px;   /* slightly larger than base */
+  height: 74px;
+}
+
+/* Large size for TCS iON */
+.large-icon {
+  width: 144px;   /* bigger size only for selected logos */
+  height: 34px;
+}
+
+/* Mobile responsive */
 @media (max-width: 768px) {
   .timeline::before {
     left: 12px;
     transform: none;
   }
-  .timeline-item:nth-child(odd) .timeline-content,
-  .timeline-item:nth-child(even) .timeline-content {
-    margin: 0 0 0 30px;
-    text-align: left;
-    max-width: 100%;
-  }
+
   .timeline-dot {
     left: 12px;
     transform: none;
+  }
+
+  .timeline-content {
+    width: 100%;
+    text-align: left;
+    padding-left: 30px;
+  }
+
+  .timeline-item:nth-child(odd) .timeline-content,
+  .timeline-item:nth-child(even) .timeline-content {
+    margin: 0;
+    padding-left: 30px;
   }
 }
