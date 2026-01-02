@@ -221,3 +221,124 @@ section.visible {
   }
 }
 
+/* Certifications Timeline */
+.certifications {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.certifications h3 {
+  font-size: 1.4rem;
+  margin-bottom: 30px;
+  color: #2c3e50;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Vertical centered line */
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  padding: 20px 0;
+  max-width: 800px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 100%;
+  background: rgba(44, 62, 80, 0.15); /* subtle center line */
+}
+
+/* Items alternate left/right around the center line */
+.timeline-item {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  margin: 30px 0;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+}
+
+.timeline-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+  margin-right: calc(50% + 30px);
+  text-align: right;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+  margin-left: calc(50% + 30px);
+  text-align: left;
+}
+
+/* Dot at the center line */
+.timeline-dot {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 12px;
+  height: 12px;
+  background: #c4a484; /* beige accent */
+  border: 2px solid #2c3e50;
+  border-radius: 50%;
+  top: 10px;
+}
+
+/* Content card */
+.timeline-content {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(2px);
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 10px;
+  padding: 16px 20px;
+  max-width: 350px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.timeline-content h4 {
+  font-size: 1.05rem;
+  color: #2c3e50;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.timeline-meta {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.timeline-content p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.55;
+}
+
+/* Mobile responsive: stack items centered */
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 12px;
+    transform: none;
+  }
+  .timeline-item:nth-child(odd) .timeline-content,
+  .timeline-item:nth-child(even) .timeline-content {
+    margin: 0 0 0 30px;
+    text-align: left;
+    max-width: 100%;
+  }
+  .timeline-dot {
+    left: 12px;
+    transform: none;
+  }
+}

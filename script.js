@@ -85,3 +85,16 @@ window.addEventListener('resize', () => {
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
 });
+
+// Reveal timeline items on scroll
+const timelineItems = document.querySelectorAll('.timeline-item');
+function revealTimeline() {
+  timelineItems.forEach(item => {
+    const rect = item.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 80) {
+      item.classList.add('visible');
+    }
+  });
+}
+window.addEventListener('scroll', revealTimeline);
+window.addEventListener('load', revealTimeline);
