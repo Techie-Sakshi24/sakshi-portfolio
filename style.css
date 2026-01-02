@@ -202,3 +202,22 @@ section.visible {
     max-width: 500px;
 }
 
+.social-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.social-buttons a {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: #2c3e50;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.social-buttons a:hover {
+    background: #3498db;
+}

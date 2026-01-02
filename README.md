@@ -34,3 +34,8 @@ The layout adapts to smaller screens using CSS media queries.
 ## 👩 About Me Section
 - Added profile photo and personal introduction
 - Highlights Sakshi’s personality: focused, ambitious, and optimistic
+
+## 🌌 New Features
+- Dynamic background color changes on scroll
+- Animated starfield background using canvas
+- Social buttons for GitHub, LinkedIn, X, Replit, and Gmail
