@@ -5,52 +5,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sakshi Kale Portfolio</title>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@400;600&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <!-- Starfield background -->
-    <canvas id="starfield"></canvas>
 
-    <!-- Header -->
-    <header>
-        <h1 class="portfolio-title">PORTFOLIO <span class="year">'20</span></h1>
-        <h2 class="name">SAKSHI KALE</h2>
-    </header>
-
-    <!-- Intro Section -->
-    <section class="intro">
-        <img src="assets/sakshi.png" alt="Sakshi Kale" class="profile-photo" />
-        <h2 class="tagline">Crafting Elegant Code, Building Bold Ideas</h2>
-        <p class="about-text">
-            Hi, I'm Sakshi 👋 A 3rd year BCA student with a passion for elegant design and bold coding solutions,
-            spending my 20s working on creative web projects that turn ideas into impactful recruiter-friendly
-            showcases.
-        </p>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm Sakshi Kale</h1>
+            <p>Aspiring Software Developer | 2026 Batch</p>
+            <ul>
+                <li>Strong in OOPS, Java, SQL, HTML, CSS, JavaScript</li>
+                <li>Quick learner, detail-oriented, responsible with deadlines</li>
+                <li>Passionate about creative web development & AI</li>
+            </ul>
+        </div>
+        <div class="hero-image">
+            <img src="assets/image.png" alt="Sakshi Hero Image" />
+        </div>
     </section>
 
-    <!-- Education Section (short, not resume-like) -->
+    <!-- Education Section -->
     <section class="education">
-        <h3>EDUCATION</h3>
+        <h2>Education</h2>
         <p>BCA, Indira College of Commerce and Science, Pune — graduating April 2026</p>
     </section>
-
-    <!-- Skills Section -->
-    <section class="skills">
-        <h3>SKILLS</h3>
-        <ul>
-            <li>Creative problem-solving & attention to detail</li>
-            <li>Independent and responsible with deadlines</li>
-            <li>Quick learner, adaptable to new technologies</li>
-            <li>Programming: Java, Python, C (OOPS)</li>
-            <li>Web Development: HTML, CSS, JavaScript</li>
-            <li>Database: MySQL · Tools: Git, VS Code</li>
-        </ul>
-    </section>
-
 
     <!-- Certifications Timeline -->
     <section class="certifications" id="certifications">
@@ -62,12 +42,8 @@
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
                     <img src="assets/infosysPY.png" alt="Infosys Logo" class="timeline-icon" />
-                    <h4>Basics of Python — Infosys Springboard</h4>
-                    <p class="timeline-meta">Completed: June 19, 2025</p>
-                    <p>
-                        Learned Python fundamentals, data types, control structures, and problem‑solving patterns.
-                        Built confidence in writing clean logic and debugging — a foundation for backend and AI work.
-                    </p>
+                    <h4>Basics of Python — Infosys</h4>
+                    <p class="timeline-meta">June 19, 2025</p>
                 </div>
             </div>
 
@@ -76,151 +52,113 @@
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
                     <img src="assets/infosysAI.png" alt="Infosys Logo" class="timeline-icon" />
-                    <h4>Introduction to AI — Infosys Springboard</h4>
-                    <p class="timeline-meta">Completed: June 20, 2025</p>
-                    <p>
-                        Covered AI concepts, ML vs. rule‑based systems, and real‑world applications.
-                        Strengthened intuition for model lifecycle, ethics, and practical use cases in products.
-                    </p>
+                    <h4>Introduction to AI — Infosys</h4>
+                    <p class="timeline-meta">June 20, 2025</p>
                 </div>
             </div>
 
-            <!-- Deloitte Forage -->
+            <!-- Deloitte -->
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
                     <img src="assets/deloitte.png" alt="Deloitte Logo" class="timeline-icon medium-icon" />
-                    <h4>Technology Job Simulation — Deloitte (Forage)</h4>
-                    <p class="timeline-meta">Completed: August 24, 2025</p>
-                    <p>
-                        Practiced coding and development tasks under realistic constraints.
-                        Focused on clarity, responsibility with deadlines, and independent execution.
-                    </p>
+                    <h4>Technology Simulation — Deloitte</h4>
+                    <p class="timeline-meta">Aug 24, 2025</p>
                 </div>
             </div>
 
-            <!-- TCS iON Career Edge -->
+            <!-- TCS iON -->
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
-                    <img src="assets/tcs.png" alt="TCS iON Logo" class="large-icon" />
-                    <h4>Career Edge — Young Professional — TCS iON</h4>
-                    <p class="timeline-meta">Completed: September 4–18, 2025</p>
-                    <p>
-                        Trained in soft skills: communication, presentations, email etiquette, interviews, and teamwork.
-                        Balanced technical ability with professional polish for client‑ready delivery.
-                    </p>
+                    <img src="assets/tcs.png" alt="TCS iON Logo" class="timeline-icon large-icon" />
+                    <h4>Career Edge — TCS iON</h4>
+                    <p class="timeline-meta">Sep 2025</p>
                 </div>
             </div>
 
-            <!-- JPMorgan Forage -->
+            <!-- JPMorgan -->
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
                     <img src="assets/jpmorgan.png" alt="JPMorgan Logo" class="timeline-icon medium-icon" />
-                    <h4>Software Engineering Job Simulation — JPMorgan Chase & Co (Forage)</h4>
-                    <p class="timeline-meta">Completed: September 21, 2025</p>
-                    <p>
-                        Hands‑on with REST APIs, controllers, and integrations (Kafka, H2) through project setup to
-                        delivery.
-                        Built systems thinking and disciplined debugging across services.
-                    </p>
+                    <h4>Software Engineering — JPMorgan</h4>
+                    <p class="timeline-meta">Sep 21, 2025</p>
                 </div>
             </div>
 
-            <!-- AWS DVA-C02 Exam Prep -->
+            <!-- AWS -->
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
                     <img src="assets/aws.png" alt="AWS Logo" class="timeline-icon" />
-                    <h4>AWS Certified Developer — Associate (DVA‑C02)</h4>
-                    <p class="timeline-meta">Completed: October 29, 2025</p>
-                    <p>
-                        Deepened understanding of AWS services, deployment pipelines, and secure app development.
-                        Practiced designing resilient, cloud‑native solutions aligned with best practices.
-                    </p>
+                    <h4>AWS Developer Associate</h4>
+                    <p class="timeline-meta">Oct 29, 2025</p>
                 </div>
             </div>
 
-            <!-- AWS Generative AI Solutions -->
+            <!-- AWS GenAI -->
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
                     <img src="assets/awsai.png" alt="AWSAI Logo" class="timeline-icon" />
-                    <h4>Developing Generative AI Solutions — AWS</h4>
-                    <p class="timeline-meta">Completed: October 31, 2025</p>
-                    <p>
-                        Explored GenAI solution design: model selection, prompt engineering, and responsible AI.
-                        Focused on integrating AI features into real products with a professional approach.
-                    </p>
+                    <h4>Generative AI Solutions — AWS</h4>
+                    <p class="timeline-meta">Oct 31, 2025</p>
                 </div>
             </div>
 
-            <!-- SOAR - AI to be Aware -->
+            <!-- SOAR -->
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
                     <img src="assets/soar.png" alt="SOAR Logo" class="timeline-icon medium-icon" />
-                    <h4>SOAR — AI to be Aware (NCVET Level 2)</h4>
-                    <p class="timeline-meta">Issued: December 22, 2025</p>
-                    <p>
-                        Recognized foundational AI awareness, ethics, and digital literacy.
-                        Validated core readiness to engage with AI systems responsibly and effectively.
-                    </p>
+                    <h4>AI Awareness — SOAR</h4>
+                    <p class="timeline-meta">Dec 22, 2025</p>
                 </div>
             </div>
 
-            <!-- LinkedIn Learning: Decision-Making with GenAI -->
+            <!-- LinkedIn GenAI -->
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
-                    <img src="assets/linkedinAI.png" alt="LinkedIn GenAI Logo" class="timeline-icon" />
-                    <h4>Strengthen Your Decision-Making with Generative AI — LinkedIn Learning</h4>
-                    <p class="timeline-meta">Completed: September 24, 2025</p>
-                    <p>
-                        Learned how to apply generative AI tools to improve decision-making processes.
-                        Focused on practical strategies for evaluating options, reducing bias, and leveraging AI
-                        insights.
-                    </p>
+                    <img src="assets/linkedinAI.png" alt="LinkedIn Logo" class="timeline-icon" />
+                    <h4>Decision-Making with GenAI — LinkedIn</h4>
+                    <p class="timeline-meta">Sep 24, 2025</p>
                 </div>
             </div>
 
-            <!-- LinkedIn Learning: Human Skills in the Age of AI -->
+            <!-- LinkedIn Human Skills -->
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
-                    <img src="assets/linkedinHS.png" alt="LinkedIn HS Logo" class="timeline-icon" />
-                    <h4>Human Skills in the Age of AI — Microsoft & LinkedIn Learning</h4>
-                    <p class="timeline-meta">Completed: September 24, 2025</p>
-                    <p>
-                        Explored the balance between AI productivity and human interpersonal skills.
-                        Strengthened adaptability, collaboration, and communication in AI-driven workplaces.
-                    </p>
+                    <img src="assets/linkedinHS.png" alt="LinkedIn Logo" class="timeline-icon" />
+                    <h4>Human Skills in AI Age — LinkedIn</h4>
+                    <p class="timeline-meta">Sep 24, 2025</p>
                 </div>
             </div>
 
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="contact">
-        <h3>CONTACT</h3>
-        <ul>
-            <li>Email: <a href="sakshiskale.2405@gmail.com">sakshiskale.2405@gmail.com</a></li>
-            <li>LinkedIn: <a href="https://www.linkedin.com/in/sakshi-kale-ab0a622b0"
-                    target="_blank">linkedin.com/in/sakshi-kale</a></li>
-        </ul>
-    </section>
-
-    <!-- Social Links -->
-    <section class="socials">
-        <h3>SOCIALS</h3>
-        <div class="social-buttons">
-            <a href="https://github.com/Techie-Sakshi24" target="_blank">GitHub</a>
-            <a href="https://linkedin.com/in/sakshi-kale-701580250" target="_blank">LinkedIn</a>
-            <a href="https://x.com/SakshiKale32757" target="_blank">X</a>
-            <a href="https://replit.com/@sakshiskale2405" target="_blank">Replit</a>
-            <a href="mailto:sakshiskale.2405@gmail.com">Gmail</a>
+    <!-- About Me Section -->
+    <section class="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="assets/sakshi.png" alt="Sakshi Kale" class="real-photo" />
+            <div>
+                <p>
+                    I’m a BCA student passionate about building elegant web experiences and practical software
+                    solutions.
+                    Skilled in Java, Python, SQL, and modern web technologies — always curious, always learning.
+                </p>
+                <h3>Contact</h3>
+                <ul>
+                    <li>📞 +91 8208371008</li>
+                    <li>✉️ <a href="mailto:sakshiskale.2405@gmail.com">sakshiskale.2405@gmail.com</a></li>
+                    <li>🔗 <a href="https://linkedin.com/in/sakshi-kale" target="_blank">LinkedIn</a></li>
+                    <li>💻 <a href="https://github.com/Techie-Sakshi24" target="_blank">GitHub</a></li>
+                </ul>
+            </div>
         </div>
     </section>
 
@@ -249,13 +187,21 @@
         </div>
     </section>
 
+    <!-- Social Handles Section -->
+    <section class="socials">
+        <h2>Connect with Me</h2>
+        <div class="social-links">
+            <a href="https://linkedin.com/in/sakshi-kale" target="_blank">LinkedIn</a>
+            <a href="https://github.com/Techie-Sakshi24" target="_blank">GitHub</a>
+            <a href="https://twitter.com/yourhandle" target="_blank">Twitter</a>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer>
-        <p>© 2026 Sakshi Kale. All rights reserved.</p>
+        <p>© 2026 Sakshi Kale · All Rights Reserved</p>
     </footer>
 
-    <!-- JavaScript -->
-    <script src="script.js"></script>
 </body>
 
 </html>
