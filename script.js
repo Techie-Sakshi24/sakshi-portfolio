@@ -100,3 +100,14 @@ function revealTimeline() {
 
 window.addEventListener('scroll', revealTimeline);
 window.addEventListener('load', revealTimeline);
+
+const container = document.querySelector('.projects-container');
+const boxWidth = 600; // must match CSS width
+
+function scrollLeft() {
+  container.scrollBy({ left: -boxWidth, behavior: 'smooth' });
+}
+
+function scrollRight() {
+  container.scrollBy({ left: boxWidth, behavior: 'smooth' });
+}
