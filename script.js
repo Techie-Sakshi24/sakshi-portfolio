@@ -114,12 +114,12 @@ function scrollRight() {
 
 const revealImage = document.querySelector('.reveal-img');
 
-function revealOnScroll() {
-  const rect = revealImage.getBoundingClientRect();
-  if (rect.top < window.innerHeight - 80) {
-    revealImage.classList.add('visible');
-  }
-}
+        function revealOnScroll() {
+            const rect = revealImage.getBoundingClientRect();
+            if (rect.top < window.innerHeight - 80) {
+                revealImage.classList.add('visible');
+            }
+        }
 
-window.addEventListener('scroll', revealOnScroll);
-window.addEventListener('load', revealOnScroll);
+        window.addEventListener('scroll', revealOnScroll);
+        window.addEventListener('load', revealOnScroll);

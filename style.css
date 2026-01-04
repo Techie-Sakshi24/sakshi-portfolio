@@ -352,54 +352,47 @@ body {
   }
 }
 
-/*        About + contact        */
+/*        About        */
+.about {
+  padding: 60px 20px;
+  background-color: #0f0f0f; /* dark theme */
+  color: #ffffff;
+  text-align: center;
+}
+
 .about h2 {
-  font-size: 1.6rem;
-  margin-bottom: 18px;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #c4a484; /* warm accent */
+  margin-bottom: 40px;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
 }
 
+/*     Content Layout     */
 .about-content {
-  display: grid;
-  grid-template-columns: 160px 1fr;
-  gap: 20px;
-  align-items: start;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-.real-photo {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  border: 3px solid var(--accent);
-  object-fit: cover;
-  box-shadow: 0 10px 24px rgba(0,0,0,0.35);
-}
-
-.about-content p {
-  margin-bottom: 12px;
-}
-
-.about-content h3 {
-  margin-top: 8px;
-  font-size: 1.2rem;
-}
-
-.about-content ul {
-  list-style: none;
-  padding: 0;
-  margin-top: 6px;
-}
-
-.about-content li {
-  margin-bottom: 6px;
-  color: var(--text);
-}
-
+/*      Image Reveal Effect     */
 .about-image {
-  overflow: hidden;
+  flex: 1 1 300px;
+  text-align: center;
 }
 
 .reveal-img {
-  opacity: 0;
+  max-width: 280px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+  opacity: 1;
   transform: translateY(40px);
   transition: all 0.8s ease;
 }
@@ -407,6 +400,59 @@ body {
 .reveal-img.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+/*       Text Section       */
+.about-text {
+  flex: 2 1 500px;
+  text-align: left;
+}
+
+.about-text p {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  color: #e0e0e0;
+}
+
+/*       Contact Section       */
+.about-text h3 {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #c4a484;
+  text-align: center;
+}
+
+/* Contact buttons container */
+.contact-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.contact-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.4);
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
+  .reveal-img {
+    max-width: 220px;
+  }
 }
 
 /*          Projects          */
