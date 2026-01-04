@@ -394,6 +394,21 @@ body {
   color: var(--text);
 }
 
+.about-image {
+  overflow: hidden;
+}
+
+.reveal-img {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.reveal-img.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /*          Projects          */
 
 .projects-section {
