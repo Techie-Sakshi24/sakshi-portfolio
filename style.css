@@ -1,5 +1,7 @@
-/* Base styles and theme         */
+/* 1. Import fonts at the very top */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600&family=Inter:wght@400&display=swap');
 
+/* Base styles and theme         */
 :root {
   --bg: #0f1220;         /* deep navy */
   --text: #e9ecf6;       /* soft white */
@@ -20,6 +22,15 @@ html, body {
   background: var(--bg);
   color: var(--text);
   font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+}
+
+/* 2. Base styles */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #0f0f0f;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
 }
 
 /* Layout containers */
@@ -54,7 +65,33 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Star-like animated background */
+/* 3. Headings styles */
+h1, h2, h3, .projects-heading, .certifications h3 {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #c4a484;
+  text-align: center;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+  margin-bottom: 20px;
+}
+
+/* 4. Section-specific tweaks */
+.projects-heading {
+  font-size: 2.4rem;
+  margin-top: 40px;
+}
+
+.certifications h3 {
+  font-size: 2rem;
+  margin-top: 30px;
+}
+
+.intro h1 {
+  font-size: 3rem;
+  margin-top: 20px;
+}
 
 /* Vertical line through the page with twinkling stars and subtle shooting stars */
 body::before {
