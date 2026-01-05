@@ -14,7 +14,7 @@
     <section class="hero">
         <div class="hero-content">
             <h1>Hi, I'm </h1>
-            <h1><span class="highlight-name">Sakshi Kale</span></h1>
+            <h1><span id="typing-name"></span></h1>
             <p>Aspiring Software Developer | 2026 Batch</p>
             <ul>
                 <li>Strong in OOPS, Java, SQL, HTML, CSS, JavaScript</li>
@@ -22,6 +22,7 @@
                 <li>Passionate about creative web development & AI</li>
             </ul>
         </div>
+
         <div class="hero-image">
             <img src="assets/image.png" alt="Sakshi Hero Image" />
             <div class="button-wrapper">
@@ -29,6 +30,32 @@
             </div>
         </div>
     </section>
+
+    <!-- Typing Effect Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const nameElement = document.getElementById("typing-name");
+            if (!nameElement) {
+                console.log("typing-name element not found");
+                return;
+            }
+
+            const text = "Sakshi Kale";
+            let index = 0;
+
+            function typeEffect() {
+                if (index < text.length) {
+                    nameElement.textContent += text.charAt(index);
+                    index++;
+                    setTimeout(typeEffect, 150);
+                }
+            }
+
+            // Start typing
+            nameElement.textContent = ""; // ensure empty
+            typeEffect();
+        });
+    </script>
 
     <!-- Education Section -->
     <section class="education">

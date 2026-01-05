@@ -111,3 +111,4 @@ function scrollLeft() {
 function scrollRight() {
   container.scrollBy({ left: boxWidth, behavior: 'smooth' });
 }
+

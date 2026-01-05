@@ -94,14 +94,18 @@ h1, h2, h3, .projects-heading, .certifications h3 {
   color: #ffffff; 
 }
 
-
-.highlight-name {
-  font-size: 3.2rem;
-  font-weight: 700;
-  color: #c4a484; /* warm accent */
-  text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+#typing-name {
+  border-right: 2px solid #5d232d; /* golden cursor */
+  padding-right: 4px;
+  font-size: 3.4rem;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: cursorBlink 0.9s steps(1) infinite;
 }
 
+@keyframes cursorBlink {
+  50% { border-color: transparent; }
+}
 
 /* Vertical line through the page with twinkling stars and subtle shooting stars */
 body::before {
