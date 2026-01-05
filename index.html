@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sakshi Kale Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -13,7 +14,7 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <h1>Hi, I'm </h1>
+            <h1  class="hero-intro">Hi, I'm </h1>
             <h1><span id="typing-name"></span></h1>
             <p>Aspiring Software Developer | 2026 Batch</p>
             <ul>
@@ -45,9 +46,19 @@
 
             function typeEffect() {
                 if (index < text.length) {
-                    nameElement.textContent += text.charAt(index);
+                    const span = document.createElement("span");
+                    span.textContent = text.charAt(index);
+                    span.style.opacity = "0";
+                    span.style.transition = "opacity 0.3s ease";
+                    nameElement.appendChild(span);
+
+                    // trigger fade-in
+                    setTimeout(() => {
+                        span.style.opacity = "1";
+                    }, 50);
+
                     index++;
-                    setTimeout(typeEffect, 150);
+                    setTimeout(typeEffect, 200);
                 }
             }
 

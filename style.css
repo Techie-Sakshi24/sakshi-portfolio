@@ -94,13 +94,22 @@ h1, h2, h3, .projects-heading, .certifications h3 {
   color: #ffffff; 
 }
 
+.hero-intro {
+  font-family: 'Bughia';
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #c4a484;
+  margin-bottom: 10px;
+}
+
 #typing-name {
-  border-right: 2px solid #5d232d; /* golden cursor */
+  /*border-right: 2px solid #5d232d;  golden cursor */
   padding-right: 4px;
-  font-size: 3.4rem;
+  font-size: 3.9rem;
+  font-family: 'Dancing Script', cursive;
   white-space: nowrap;
   overflow: hidden;
-  animation: cursorBlink 0.9s steps(1) infinite;
+  animation: cursorBlink 0.8s steps(1) infinite;
 }
 
 @keyframes cursorBlink {
@@ -206,6 +215,7 @@ body::after {
 
 .education h2 {
   font-size: 1.6rem;
+  text-align: left;
 }
 
 .education p {
@@ -228,7 +238,7 @@ body {
 }
 
 .certifications h3 {
-  font-size: 1.8rem;
+  font-size: 2.8rem;
   margin-bottom: 40px;
   color: #fff;
   letter-spacing: 1px;
