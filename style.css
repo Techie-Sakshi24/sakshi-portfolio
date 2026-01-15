@@ -550,8 +550,8 @@ body {
 }
 
 .scroll-btn {
-  background: #4CAF50;
-  color: white;
+  color: #c4a484;
+  color: rgb(0, 0, 0);
   border: none;
   padding: 12px 20px;
   margin: 10px;
